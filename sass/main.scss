@@ -120,6 +120,7 @@ header {
     background-color: rgb(240, 240, 240);
     display:flex;
     flex-direction:column;
+    padding-bottom:10%;
     .restaurant-titre {
         margin-left:4%;
         margin-bottom:10px;
@@ -181,7 +182,6 @@ header {
     }
 }
 footer {
-    margin-top:10%;
     background-color: rgb(37, 37, 37);
     font-family:'Roboto', sans-serif;
     font-weight:normal;
