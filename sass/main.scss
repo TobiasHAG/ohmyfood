@@ -12,6 +12,12 @@ header {
     }
   }
 
+  a:link, a:visited,  a:hover, a:active
+  {
+      color: #000000;
+      text-decoration: none;
+  }
+
 .localisation {
     height:60px;
     background-color: rgb(236, 236, 236);
@@ -217,4 +223,54 @@ footer {
         }
     }
 
+}
+
+.menu-image-cover {
+    margin-top:-2%;
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit:cover;
+    }
+}
+
+.menu-global {
+    z-index:100;
+    position:absolute;
+    background-color:rgb(240, 240, 240);
+    margin-top:-15%;
+    width:100%;
+    height:100%;
+    border-radius: 40px;
+    .menu-titre-restaurant {
+        padding-top:3%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            padding-left:7%;
+            font-family:'Shrikhand', sans-serif;
+            font-weight:300;
+            font-size:30px;
+        }
+        i {
+            padding-right:7%;
+        }
+    }
+}
+
+.menu-cards {
+    margin-left:7%;
+    margin-right:3%;
+    .menu-titres {
+        font-family: 'Roboto', sans-serif;
+        font-weight:500;
+        margin-right:85%;
+        p {
+            padding-bottom:5%;
+            border-bottom:solid;
+            border-color:#99E2D0;
+        }
+    }
 }
