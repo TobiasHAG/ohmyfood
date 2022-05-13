@@ -142,6 +142,8 @@ header img {
   background-color: white;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .restaurant .restaurant-cards .restaurant-card img {
   width: 100%;
