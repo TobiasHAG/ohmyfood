@@ -263,6 +263,7 @@ footer .footer-lien p {
 .menu-cards {
   margin-left: 7%;
   margin-right: 3%;
+  margin-bottom: 50px;
 }
 .menu-cards .menu-titres {
   font-family: "Roboto", sans-serif;
@@ -275,4 +276,69 @@ footer .footer-lien p {
   border-color: #99E2D0;
 }
 
+.menu-cards-undercards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.menu-cards-element {
+  background-color: white;
+  box-shadow: 3px 3px 2px rgb(202, 202, 202);
+  border-style: none;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-cards-element .menu-cards-element-column {
+  display: flex;
+  flex-direction: column;
+}
+.menu-cards-element h2 {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-left: 10px;
+  margin-bottom: 3px;
+  margin-top: 0px;
+}
+.menu-cards-element p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.menu-cards-element .menu-cards-element-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-right: 25px;
+  font-size: 15px;
+}
+
+.separator {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.btn-command {
+  margin: 5% 27% 20% 27%;
+  padding: 3px 3px 3px 3px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #9356DC;
+  box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #FF79DA inset;
+  text-align: center;
+}
+.btn-command p {
+  margin: 10px;
+  color: white;
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=style.css.map */
+
