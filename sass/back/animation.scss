@@ -1,0 +1,27 @@
+.anim-cards {
+    animation: anim-cards .8s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform:scale(0);
+}
+
+@keyframes anim-cards {
+    0% {
+        transform:scale(0);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+.delay-1 {
+    animation-delay:0;
+}
+
+.delay-2 {
+    animation-delay:0.5s;
+}
+
+.delay-3 {
+    animation-delay:1s;
+}

@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    justify-content: center;
+        border-bottom:solid;
+        border-bottom-width:4px;
+        border-color:rgb(226, 226, 226);
+    img {
+        width:75%;
+        padding-top: 5%;
+        padding-left:12%;
+        padding-bottom:3%;
+    }
+  }
+
+footer {
+    background-color: rgb(37, 37, 37);
+    font-family:'Roboto', sans-serif;
+    font-weight:normal;
+    color:white;
+    .footer-titre {
+        padding-top:3%;
+        padding-left:5%;
+        h3 {
+            font-family: 'Shrikhand', sans-serif;
+            font-weight:100;
+            font-size:24px;
+        }
+    }
+    .footer-lien {
+        margin-top:-1%;
+        display:flex;
+        flex-direction:column;
+        .footer-restaurant {
+            display:flex;
+            flex-direction:row;
+            gap:5px;
+            padding-left:5%;
+            justify-content: left;
+            align-items: center;
+        }
+        p {
+            display:flex;
+            flex-direction:row;
+            gap:5px;
+            padding-left:5%;
+            justify-content: left;
+            align-items: center;
+        }
+    }
+
+}
+
+.separator {
+    display:none;
+    margin-bottom:30px;
+}
+
+.btn-command {
+    margin:5% 27% 20% 27%;
+    padding:3px 3px 3px 3px;
+    @include radius-15;
+    @include background_violet;
+    @include btn-box-shadow;
+    text-align: center;
+    p {
+        margin:10px;
+        color:white;
+        font-size:18px;
+    }
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
