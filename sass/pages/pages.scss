@@ -1,0 +1,120 @@
+.menu-image-cover {
+    margin-top:-2%;
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit:cover;
+    }
+}
+
+.menu-global {
+    z-index:100;
+    position:absolute;
+    background-color:rgb(240, 240, 240);
+    margin-top:-15%;
+    width:100%;
+    height:150%;
+    border-radius: 40px;
+    .menu-titre-restaurant {
+        padding-top:3%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            padding-left:7%;
+            font-family:'Shrikhand', sans-serif;
+            font-weight:300;
+            font-size:30px;
+        }
+        i {
+            padding-right:7%;
+        }
+    }
+}
+
+.menu-cards {
+    margin-left:7%;
+    margin-right:3%;
+    margin-bottom:50px;
+    .menu-titres {
+        font-family: 'Roboto', sans-serif;
+        font-weight:500;
+        margin-right:85%;
+        p {
+            padding-bottom:5%;
+            border-bottom:solid;
+            border-color:#99E2D0;
+        }
+    }
+}
+
+.menu-cards-undercards {
+    display:flex;
+    flex-direction: column;
+    gap:14px;
+}
+
+.menu-cards-element {
+    background-color: white;
+    box-shadow: 3px 3px 2px rgb(202, 202, 202);
+    border-style:none;
+    border-radius:15px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    .menu-cards-element-column {
+        display:flex;
+        flex-direction: column;
+    }
+    h2 {
+        font-size:17px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        padding-top:15px;
+        padding-left:10px;
+        margin-bottom:3px;
+        margin-top:0px;
+    }
+    p {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        margin-top:3px;
+        margin-bottom:10px;
+        padding-left:10px;
+    }
+    .menu-cards-element-price {
+        display:flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        font-family: 'Roboto', sans-serif;
+        font-weight:bold;
+        padding-right:25px;
+        font-size:15px;
+        margin-right:0;
+    }
+}
+
+.menu-cards-element .menu-cards-confirmation {
+    background: #99e2d0;
+    cursor: pointer;
+    height: auto;
+    width: 0px;
+    opacity: 0;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out
+}
+
+.menu-cards-element:hover .menu-cards-confirmation {
+    opacity:100%;
+    width:7rem;
+}
+.menu-cards-confirmation-logo {
+    font-size: 3rem;
+    color: white;
+    transform: rotate(360deg);
+    transition: 0.4s ease-in-out;
+}

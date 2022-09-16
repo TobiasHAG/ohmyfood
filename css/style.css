@@ -1,15 +1,217 @@
+.anim-cards {
+  animation: anim-cards 0.8s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+}
+
+@keyframes anim-cards {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 1.5s;
+}
+
+.delay-3 {
+  animation-delay: 2s;
+}
+
+.div-loader {
+  opacity: 1;
+  animation: fadeout 0.5s linear forwards;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid rgb(161, 161, 161);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.unloader {
+  animation: fadein 1s linear forwards;
+  opacity: 0%;
+}
+
+.delay-4 {
+  animation-delay: 0.5s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-bottom: solid;
   border-bottom-width: 4px;
   border-color: rgb(226, 226, 226);
 }
 header img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 75%;
   padding-top: 5%;
   padding-left: 12%;
   padding-bottom: 3%;
+}
+header a {
+  margin-left: -20px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-logo .header-logo a {
+  margin-left: 2rem;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.header-logo .header-logo img {
+  margin: auto;
+}
+
+footer {
+  background-color: rgb(37, 37, 37);
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: white;
+}
+footer .footer-titre {
+  padding-top: 3%;
+  padding-left: 5%;
+}
+footer .footer-titre h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+footer .footer-lien {
+  margin-top: -1%;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-lien .footer-restaurant {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-left: 5%;
+  justify-content: left;
+  align-items: center;
+}
+footer .footer-lien p {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-left: 5%;
+  justify-content: left;
+  align-items: center;
+}
+
+.separator {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.btn-command {
+  margin: 5% 27% 20% 27%;
+  padding: 3px 3px 3px 3px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #9356DC;
+  box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #FF79DA inset;
+  text-align: center;
+}
+.btn-command p {
+  margin: 10px;
+  color: white;
+  font-size: 18px;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -146,10 +348,7 @@ a:link, a:visited, a:hover, a:active {
   display: flex;
   flex-direction: column;
   background-color: white;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-radius: 15px 15px 15px 15px;
 }
 .restaurant .restaurant-cards .restaurant-card img {
   width: 100%;
@@ -185,44 +384,7 @@ a:link, a:visited, a:hover, a:active {
   width: 80px;
 }
 .restaurant .restaurant-cards .restaurant-card .restaurant-info .restaurant-info-heart i:hover {
-  color: #9356DC;
-}
-
-footer {
-  background-color: rgb(37, 37, 37);
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  color: white;
-}
-footer .footer-titre {
-  padding-top: 3%;
-  padding-left: 5%;
-}
-footer .footer-titre h3 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 100;
-  font-size: 24px;
-}
-footer .footer-lien {
-  margin-top: -1%;
-  display: flex;
-  flex-direction: column;
-}
-footer .footer-lien .footer-restaurant {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  padding-left: 5%;
-  justify-content: left;
-  align-items: center;
-}
-footer .footer-lien p {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  padding-left: 5%;
-  justify-content: left;
-  align-items: center;
+  background-color: #9356DC;
 }
 
 .menu-image-cover {
@@ -240,7 +402,7 @@ footer .footer-lien p {
   background-color: rgb(240, 240, 240);
   margin-top: -15%;
   width: 100%;
-  height: 100%;
+  height: 150%;
   border-radius: 40px;
 }
 .menu-global .menu-titre-restaurant {
@@ -319,26 +481,32 @@ footer .footer-lien p {
   font-weight: bold;
   padding-right: 25px;
   font-size: 15px;
+  margin-right: 0;
 }
 
-.separator {
-  display: none;
-  margin-bottom: 30px;
+.menu-cards-element .menu-cards-confirmation {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0px;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
-.btn-command {
-  margin: 5% 27% 20% 27%;
-  padding: 3px 3px 3px 3px;
-  border-radius: 15px 15px 15px 15px;
-  background-color: #9356DC;
-  box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #FF79DA inset;
-  text-align: center;
+.menu-cards-element:hover .menu-cards-confirmation {
+  opacity: 100%;
+  width: 7rem;
 }
-.btn-command p {
-  margin: 10px;
+
+.menu-cards-confirmation-logo {
+  font-size: 3rem;
   color: white;
-  font-size: 18px;
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
-
