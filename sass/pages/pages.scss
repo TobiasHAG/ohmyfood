@@ -91,12 +91,30 @@
         font-weight:bold;
         padding-right:25px;
         font-size:15px;
+        margin-right:0;
     }
 }
 
-.menu-cards-confirmation {
-    .menu-cards-confirmation-logo {
-        display:none;
-        margin:0;
-    }
+.menu-cards-element .menu-cards-confirmation {
+    background: #99e2d0;
+    cursor: pointer;
+    height: auto;
+    width: 0px;
+    opacity: 0;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out
+}
+
+.menu-cards-element:hover .menu-cards-confirmation {
+    opacity:100%;
+    width:7rem;
+}
+.menu-cards-confirmation-logo {
+    font-size: 3rem;
+    color: white;
+    transform: rotate(360deg);
+    transition: 0.4s ease-in-out;
 }

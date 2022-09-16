@@ -1,0 +1,75 @@
+.div-loader {
+    opacity:1;
+    animation: fadeout 0.5s linear forwards;
+}
+
+.loader {
+    border:10px solid #f3f3f3;
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid rgb(161, 161, 161);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+.unloader {
+    animation: fadein 1s linear forwards;
+    opacity: 0%;
+}
+
+.delay-4 {
+    animation-delay: 0.5s;
+}
+
+.delay-5 {
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0%}
+    50% { opacity: 50%}
+    100% { opacity: 100%}
+  }
+
+@keyframes fadein {
+    0% { opacity: 0%}
+    50% { opacity: 50%}
+    100% { opacity: 100%}
+  }
+
+@-webkit-keyframes fadeout {
+    0% { opacity: 100%}
+    50% { opacity: 50%}
+    100% { opacity: 0%}
+  }
+
+@keyframes fadeout {
+    0% { opacity: 100%}
+    50% { opacity: 50%}
+    100% { opacity: 0%}
+  }
+

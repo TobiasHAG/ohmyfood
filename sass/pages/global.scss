@@ -1,16 +1,39 @@
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
         border-bottom:solid;
         border-bottom-width:4px;
         border-color:rgb(226, 226, 226);
     img {
+        display:flex;
+        justify-content: center;
+        align-items: center;
         width:75%;
         padding-top: 5%;
         padding-left:12%;
         padding-bottom:3%;
     }
+    a {
+        margin-left:-20px;
+    }
   }
+
+.header-logo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    .header-logo a {
+        margin-left: 2rem;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    }
+    .header-logo img {
+        margin:auto;
+    }
+}
 
 footer {
     background-color: rgb(37, 37, 37);
