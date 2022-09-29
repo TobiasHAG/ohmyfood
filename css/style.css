@@ -384,7 +384,7 @@ a:link, a:visited, a:hover, a:active {
   width: 80px;
 }
 .restaurant .restaurant-cards .restaurant-card .restaurant-info .restaurant-info-heart i:hover {
-  background-color: #9356DC;
+  color: #9356DC;
 }
 
 .menu-image-cover {
