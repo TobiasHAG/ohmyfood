@@ -384,7 +384,7 @@ a:link, a:visited, a:hover, a:active {
   width: 80px;
 }
 .restaurant .restaurant-cards .restaurant-card .restaurant-info .restaurant-info-heart i:hover {
-  background-color: #9356DC;
+  color: #9356DC;
 }
 
 .menu-image-cover {
@@ -476,12 +476,13 @@ a:link, a:visited, a:hover, a:active {
 .menu-cards-element .menu-cards-element-price {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   padding-right: 25px;
   font-size: 15px;
   margin-right: 0;
+  margin-left: 30%;
 }
 
 .menu-cards-element .menu-cards-confirmation {
