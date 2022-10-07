@@ -421,6 +421,10 @@ a:link, a:visited, a:hover, a:active {
 .menu-global .menu-titre-restaurant i {
   padding-right: 7%;
 }
+.menu-global .menu-titre-restaurant i:hover {
+  transition: 0.5s;
+  color: #9356dc;
+}
 
 .menu-cards {
   margin-left: 7%;
@@ -450,12 +454,15 @@ a:link, a:visited, a:hover, a:active {
   border-style: none;
   border-radius: 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  overflow: hidden;
 }
 .menu-cards-element .menu-cards-element-column {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .menu-cards-element h2 {
   font-size: 17px;
@@ -465,6 +472,9 @@ a:link, a:visited, a:hover, a:active {
   padding-left: 10px;
   margin-bottom: 3px;
   margin-top: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-cards-element p {
   font-size: 14px;
@@ -472,6 +482,9 @@ a:link, a:visited, a:hover, a:active {
   margin-top: 3px;
   margin-bottom: 10px;
   padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-cards-element .menu-cards-element-price {
   display: flex;
@@ -481,8 +494,6 @@ a:link, a:visited, a:hover, a:active {
   font-weight: bold;
   padding-right: 25px;
   font-size: 15px;
-  margin-right: 0;
-  margin-left: 30%;
 }
 
 .menu-cards-element .menu-cards-confirmation {
@@ -496,6 +507,7 @@ a:link, a:visited, a:hover, a:active {
   align-items: center;
   justify-content: center;
   transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transition-duration: 0.5s;
 }
 
 .menu-cards-element:hover .menu-cards-confirmation {
@@ -503,11 +515,14 @@ a:link, a:visited, a:hover, a:active {
   width: 7rem;
 }
 
+.menu-cards-element:hover .menu-cards-confirmation-logo i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+
 .menu-cards-confirmation-logo {
   font-size: 3rem;
   color: white;
-  transform: rotate(360deg);
-  transition: 0.4s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
