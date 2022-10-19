@@ -1,0 +1,11 @@
+@mixin background_violet {
+    background-color:#9356DC;
+}
+
+@mixin radius-15 {
+    border-radius: 15px 15px 15px 15px;
+}
+
+@mixin btn-box-shadow {
+    box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #FF79DA inset;
+}
