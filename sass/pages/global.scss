@@ -11,7 +11,7 @@ header {
         align-items: center;
         width:65%;
         padding-top: 5%;
-        padding-left:18%;
+        padding-left:12%;
         padding-bottom:3%;
     }
     a {
@@ -103,7 +103,7 @@ footer {
 .btn-command {
     margin:5% 27% 20% 27%;
     padding:3px 3px 3px 3px;
-    border-radius: 15px 15px 15px 15px;
+    @include radius-15;
     @include background_violet;
     @include btn-box-shadow;
     text-align: center;
@@ -117,12 +117,6 @@ footer {
 @media (min-width:768px) {
     .btn-command {
         margin: 2% 35% 6% 35%;
-    }
-    .logo-accueil {
-        width: 100%;
-    }
-    .header-logo {
-        justify-content: center;
     }
 }
 
