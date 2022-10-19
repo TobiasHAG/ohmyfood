@@ -57,6 +57,11 @@ header {
     .header-logo img {
         margin:auto;
     }
+    @media (min-width:768px) {
+        .logo-accueil {
+            width: 100%;
+        }
+    }
 }
 
 footer {
@@ -103,7 +108,7 @@ footer {
 .btn-command {
     margin:5% 27% 20% 27%;
     padding:3px 3px 3px 3px;
-    @include radius-15;
+    border-radius: 15px 15px 15px 15px;
     @include background_violet;
     @include btn-box-shadow;
     text-align: center;
