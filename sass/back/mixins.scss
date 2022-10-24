@@ -9,3 +9,7 @@
 @mixin btn-box-shadow {
     box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #FF79DA inset;
 }
+
+@mixin pointer {
+    cursor: pointer;
+}

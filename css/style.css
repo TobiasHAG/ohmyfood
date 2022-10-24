@@ -145,6 +145,14 @@ header p {
   visibility: hidden;
 }
 
+p {
+  cursor: pointer;
+}
+
+h1 {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   header {
     display: flex;
@@ -267,6 +275,7 @@ a:link, a:visited, a:hover, a:active {
   color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .explore {
@@ -282,11 +291,13 @@ a:link, a:visited, a:hover, a:active {
   font-weight: bold;
   text-align: center;
   margin: 5% 10% 0 10%;
+  cursor: pointer;
 }
 .explore p {
   text-align: center;
   margin: 0 10% 0 10%;
   font-size: 15px;
+  cursor: pointer;
 }
 .explore .btn-explore {
   border-radius: 15px 15px 15px 15px;
@@ -297,6 +308,7 @@ a:link, a:visited, a:hover, a:active {
   color: white;
   font-weight: bold;
   font-size: 16px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -327,8 +339,9 @@ a:link, a:visited, a:hover, a:active {
 }
 .fonctionnement .fonctionnement-titre h1 {
   font-size: 27px;
-  font-style: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
 .fonctionnement .fonctionnement-cards {
   margin-top: 15px;
@@ -353,6 +366,7 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
   font-weight: bold;
   font-size: 17px;
+  cursor: pointer;
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card .fonctionnement-card-round {
   height: 25px;
@@ -366,6 +380,7 @@ a:link, a:visited, a:hover, a:active {
 .fonctionnement .fonctionnement-cards .fonctionnement-card .fonctionnement-card-round p {
   color: white;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .restaurant {
@@ -400,6 +415,7 @@ a:link, a:visited, a:hover, a:active {
 .restaurant .restaurant-cards .restaurant-card .restaurant-info {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .restaurant .restaurant-cards .restaurant-card .restaurant-info .restaurant-info-texte {
   padding-left: 3%;
@@ -483,6 +499,7 @@ a:link, a:visited, a:hover, a:active {
   margin-top: -15%;
   width: 100%;
   border-radius: 40px;
+  cursor: pointer;
 }
 .menu-global .menu-titre-restaurant {
   padding-top: 3%;
@@ -534,6 +551,7 @@ a:link, a:visited, a:hover, a:active {
   border-radius: 15px;
   display: flex;
   overflow: hidden;
+  cursor: pointer;
 }
 .menu-cards-element .menu-cards-element-column {
   white-space: nowrap;
