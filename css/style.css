@@ -250,14 +250,15 @@ footer .footer-lien p {
   box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #FF79DA inset;
   text-align: center;
 }
-.btn-command .btn-command:hover {
-  background-color: #a881d7;
-  box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #f9a6e1 inset;
-}
 .btn-command p {
   margin: 10px;
   color: white;
   font-size: 18px;
+}
+
+.btn-command:hover {
+  background-color: #a881d7;
+  box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #f9a6e1 inset;
 }
 
 @media (min-width: 768px) {
@@ -314,15 +315,15 @@ a:link, a:visited, a:hover, a:active {
   background-color: #9356DC;
   box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #FF79DA inset;
 }
-.explore .btn-explore .btn-explore:hover {
-  background-color: #a881d7;
-  box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #f9a6e1 inset;
-}
 .explore .btn-explore p {
   color: white;
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
+}
+.explore .btn-explore:hover {
+  background-color: #a881d7;
+  box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #f9a6e1 inset;
 }
 
 @media (max-width: 768px) {
