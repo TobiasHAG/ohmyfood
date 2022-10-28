@@ -126,6 +126,10 @@ footer {
     @include background_violet;
     @include btn-box-shadow;
     text-align: center;
+    .btn-command:hover {
+        background-color: #a881d7;
+        box-shadow:3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #f9a6e1 inset;
+    }
     p {
         margin:10px;
         color:white;
