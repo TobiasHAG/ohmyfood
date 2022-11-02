@@ -88,7 +88,7 @@
     .fonctionnement-cards {
         margin-top:15px;
         margin-bottom:35px;
-        margin-left:4%;
+        margin-left:6%;
         .fonctionnement-card {
             background-color: rgb(245, 245, 245);
             border:none;
@@ -111,13 +111,14 @@
                 @include pointer;
             }
             .fonctionnement-card-round {
-                height:20px;
-                width:20px;
+                height:22px;
+                width:22px;
                 border-radius: 50%;
                 @include background_violet;
                 display:flex;
                 justify-content: center;
                 align-items: center;
+                margin-left:-9%;
                 p {
                     color:white;
                     font-size:12px; 

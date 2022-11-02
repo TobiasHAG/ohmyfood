@@ -372,7 +372,7 @@ a:link, a:visited, a:hover, a:active {
 .fonctionnement .fonctionnement-cards {
   margin-top: 15px;
   margin-bottom: 35px;
-  margin-left: 4%;
+  margin-left: 6%;
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card {
   background-color: rgb(245, 245, 245);
@@ -397,13 +397,14 @@ a:link, a:visited, a:hover, a:active {
   cursor: pointer;
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card .fonctionnement-card-round {
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   border-radius: 50%;
   background-color: #9356DC;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -9%;
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card .fonctionnement-card-round p {
   color: white;
