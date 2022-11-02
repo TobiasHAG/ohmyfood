@@ -121,6 +121,10 @@
     opacity: 0%;
   }
 }
+body {
+  max-width: 100%;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -228,6 +232,10 @@ footer .footer-lien .footer-restaurant {
   padding-left: 5%;
   justify-content: left;
   align-items: center;
+  gap: 15px;
+}
+footer .footer-lien .footer-restaurant p {
+  padding-left: 0%;
 }
 footer .footer-lien p {
   display: flex;
@@ -235,6 +243,9 @@ footer .footer-lien p {
   padding-left: 5%;
   justify-content: left;
   align-items: center;
+}
+footer .footer-lien p a {
+  color: white;
 }
 
 .separator {
@@ -311,7 +322,7 @@ a:link, a:visited, a:hover, a:active {
   cursor: pointer;
 }
 .explore .btn-explore {
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 25px 25px 25px 25px;
   background-color: #9356DC;
   box-shadow: 3px 3px 2px rgb(161, 161, 161), 5px 16px 45px #FF79DA inset;
 }
@@ -355,7 +366,7 @@ a:link, a:visited, a:hover, a:active {
 .fonctionnement .fonctionnement-titre h1 {
   font-size: 27px;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-weight: 1000;
   cursor: pointer;
 }
 .fonctionnement .fonctionnement-cards {
@@ -365,13 +376,15 @@ a:link, a:visited, a:hover, a:active {
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card {
   background-color: rgb(245, 245, 245);
+  border: none;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
-  justify-content: left;
   align-items: center;
+  align-content: flex-start;
   gap: 15px;
   margin-right: 18%;
-  padding-left: 3%;
+  padding-left: 5%;
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card i {
   margin-left: 5px;
@@ -379,13 +392,13 @@ a:link, a:visited, a:hover, a:active {
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card p {
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 17px;
   cursor: pointer;
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card .fonctionnement-card-round {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   background-color: #9356DC;
   display: flex;
@@ -394,8 +407,11 @@ a:link, a:visited, a:hover, a:active {
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card .fonctionnement-card-round p {
   color: white;
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
+}
+.fonctionnement .fonctionnement-card:hover i {
+  color: #9356DC;
 }
 
 .restaurant {
@@ -418,14 +434,30 @@ a:link, a:visited, a:hover, a:active {
   display: flex;
   flex-direction: column;
   background-color: white;
+  margin-bottom: 15px;
   border-radius: 15px 15px 15px 15px;
 }
-.restaurant .restaurant-cards .restaurant-card img {
+.restaurant .restaurant-cards .restaurant-card .restaurant-img {
+  position: relative;
+}
+.restaurant .restaurant-cards .restaurant-card .restaurant-img img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+}
+.restaurant .restaurant-cards .restaurant-card .restaurant-img .restaurant-img-etiquette {
+  position: absolute;
+  background-color: rgba(5, 248, 171, 0.999);
+  padding: 0px 12px 0px 12px;
+  border-radius: 5px;
+}
+.restaurant .restaurant-cards .restaurant-card .restaurant-img .restaurant-img-etiquette p {
+  color: green;
+  margin: 8px 0px 8px 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 .restaurant .restaurant-cards .restaurant-card .restaurant-info {
   display: flex;
@@ -444,6 +476,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .restaurant .restaurant-cards .restaurant-card .restaurant-info .restaurant-info-texte p {
   font-size: 14px;
+  font-weight: 500;
   margin-top: -9px;
   margin-right: -40%;
 }
@@ -458,6 +491,18 @@ a:link, a:visited, a:hover, a:active {
   color: #9356DC;
 }
 
+@media (max-width: 1024px) {
+  .restaurant-img-etiquette {
+    left: 72%;
+    top: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-img-etiquette {
+    top: 10%;
+    left: 87%;
+  }
+}
 @media (min-width: 768px) {
   .restaurant-cards {
     display: grid;
