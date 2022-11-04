@@ -111,9 +111,9 @@
                 @include pointer;
             }
             .fonctionnement-card-round {
-                height:22px;
-                width:22px;
-                border-radius: 50%;
+                height:1.5em;
+                width:1.5em;
+                border-radius: 50px;
                 @include background_violet;
                 display:flex;
                 justify-content: center;
@@ -199,8 +199,21 @@
                     align-items: center;
                     margin-left:50px;
                     width:80px;
-                    i:hover {
-                        color: #9356DC;
+                    .favorite_ico {
+                        position: absolute;
+                        background-color: #FFFF;
+                        transition: opacity 1000ms ease-in-out;
+                        font-size: 1.5em;
+                    }
+                    .favorite_ico-color {
+                        background: linear-gradient(#ff79da, #9356dc);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-size: 1.5em;
+                    }
+                    .favorite_ico:hover {
+                        opacity:0;
+                        cursor:pointer;
                     }
                 }
             }  
