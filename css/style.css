@@ -121,8 +121,12 @@
     opacity: 0%;
   }
 }
-body {
-  max-width: 100%;
+main {
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  min-width: 380px;
+  margin: auto;
 }
 
 header {
@@ -383,8 +387,10 @@ a:link, a:visited, a:hover, a:active {
   align-items: center;
   align-content: flex-start;
   gap: 15px;
-  margin-right: 18%;
+  width: 70%;
   padding-left: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card i {
   margin-left: 5px;
@@ -507,14 +513,14 @@ a:link, a:visited, a:hover, a:active {
 
 @media (max-width: 1024px) {
   .restaurant-img-etiquette {
-    left: 72%;
+    right: 20px;
     top: 5%;
   }
 }
 @media (min-width: 1024px) {
   .restaurant-img-etiquette {
     top: 10%;
-    left: 87%;
+    right: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -543,7 +549,6 @@ a:link, a:visited, a:hover, a:active {
 .menu-image-cover img {
   height: 300px;
   width: 100%;
-  object-fit: cover;
 }
 
 .menu-grid {
@@ -570,8 +575,8 @@ a:link, a:visited, a:hover, a:active {
   z-index: 100;
   position: absolute;
   background-color: rgb(240, 240, 240);
-  margin-top: -15%;
-  width: 100%;
+  margin: -15% auto;
+  width: 73%;
   border-radius: 40px;
   cursor: pointer;
 }
@@ -596,6 +601,11 @@ a:link, a:visited, a:hover, a:active {
   color: #9356dc;
 }
 
+@media (max-width: 1024px) {
+  .menu-global {
+    width: 100%;
+  }
+}
 .menu-cards {
   margin-left: 7%;
   margin-right: 3%;
