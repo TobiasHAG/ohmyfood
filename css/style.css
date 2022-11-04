@@ -397,9 +397,9 @@ a:link, a:visited, a:hover, a:active {
   cursor: pointer;
 }
 .fonctionnement .fonctionnement-cards .fonctionnement-card .fonctionnement-card-round {
-  height: 22px;
-  width: 22px;
-  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50px;
   background-color: #9356DC;
   display: flex;
   justify-content: center;
@@ -488,8 +488,21 @@ a:link, a:visited, a:hover, a:active {
   margin-left: 50px;
   width: 80px;
 }
-.restaurant .restaurant-cards .restaurant-card .restaurant-info .restaurant-info-heart i:hover {
-  color: #9356DC;
+.restaurant .restaurant-cards .restaurant-card .restaurant-info .restaurant-info-heart .favorite_ico {
+  position: absolute;
+  background-color: white;
+  transition: opacity 1000ms ease-in-out;
+  font-size: 1.5em;
+}
+.restaurant .restaurant-cards .restaurant-card .restaurant-info .restaurant-info-heart .favorite_ico-color {
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+}
+.restaurant .restaurant-cards .restaurant-card .restaurant-info .restaurant-info-heart .favorite_ico:hover {
+  opacity: 0;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
