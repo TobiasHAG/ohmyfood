@@ -3,7 +3,6 @@
     img {
         height:300px;
         width: 100%;
-        object-fit:cover;
     }
 }
 
@@ -30,8 +29,8 @@
     z-index:100;
     position:absolute;
     background-color:rgb(240, 240, 240);
-    margin-top:-15%;
-    width:100%;
+    margin: -15% auto;
+    width:73%;
     border-radius: 40px;
     @include pointer;
     .menu-titre-restaurant {
@@ -53,6 +52,12 @@
             transition:.5s;
             color: #9356dc;
         }
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu-global {
+        width:100%;
     }
 }
 

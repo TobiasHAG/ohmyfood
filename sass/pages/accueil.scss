@@ -98,8 +98,10 @@
             align-items: center;
             align-content: flex-start;
             gap:15px;
-            margin-right:18%;
+            width:70%;
             padding-left:5%;
+            margin-left: auto;
+            margin-right: auto;
             i {
                 margin-left:5px;
                 margin-right:12px;
@@ -223,14 +225,14 @@
 
 @media (max-width: 1024px) {
     .restaurant-img-etiquette {
-        left: 72%;
+        right: 20px;
         top: 5%;
     }
 }
 @media (min-width: 1024px) {
     .restaurant-img-etiquette {
         top: 10%;
-        left: 87%;
+        right: 20px;
     }
 }
 
